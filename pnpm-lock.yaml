@@ -18,7 +18,7 @@ importers:
         specifier: ^18.4.0
         version: 18.4.3
       changesets-commit:
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:packages/changesets-commit
       eslint:
         specifier: ^8.55.0

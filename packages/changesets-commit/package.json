@@ -1,0 +1,32 @@
+{
+  "name": "changesets-commit",
+  "version": "0.0.0",
+  "type": "module",
+  "description": "Self-use commit message generator",
+  "author": "Joie <leaps@live.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/usings/utilities/tree/main/packages/changesets-commit",
+  "keywords": [
+    "changesets-commit"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild"
+  },
+  "dependencies": {
+    "outdent": "^0.8.0"
+  },
+  "devDependencies": {
+    "@changesets/types": "^5.2.1"
+  }
+}
