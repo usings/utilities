@@ -1,6 +1,6 @@
 {
   "name": "changesets-commit",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "description": "Self-use commit message generator",
   "author": "Joie <leaps@live.com>",
