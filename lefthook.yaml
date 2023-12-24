@@ -22,12 +22,3 @@ build:
   commands:
     build packages:
       run: pnpm --recursive build
-
-release:
-  commands:
-    bump changes:
-      run: pnpm changeset add
-    bump versions:
-      run: pnpm changeset version
-    publish packages:
-      run: pnpm changeset publish
