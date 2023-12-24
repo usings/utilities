@@ -9,11 +9,11 @@
     "@changesets/cli": "^2.27.1",
     "@commitlint/cli": "^18.4.0",
     "@commitlint/config-conventional": "^18.4.0",
+    "@witheslint/core": "^0.1.0",
     "changesets-commit": "workspace:^",
-    "eslint": "^8.55.0",
-    "eslint-presets": "^2.3.3",
+    "eslint": "^8.56.0",
     "lefthook": "^1.5.5",
-    "typescript": "~5.2.2",
+    "typescript": "5.3.3",
     "unbuild": "^2.0.0"
   }
 }

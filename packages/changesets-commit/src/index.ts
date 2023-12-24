@@ -9,11 +9,12 @@ const getVersionMessage: CommitFunctions['getVersionMessage'] = async (
   const numberPackagesReleased = publishableReleases.length
 
   const releasesLines = publishableReleases
-    .map((release) => `  ${release.name}@${release.newVersion}`)
+    .map(release => `  ${release.name}@${release.newVersion}`)
     .join('\n')
 
-  if (numberPackagesReleased === 1)
+  if (numberPackagesReleased === 1) {
     return outdent`chore: releasing ${releasesLines.trim()}`
+  }
 
   return outdent`
     chore: releasing packages
