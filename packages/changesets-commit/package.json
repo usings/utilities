@@ -27,6 +27,6 @@
     "outdent": "^0.8.0"
   },
   "devDependencies": {
-    "@changesets/types": "^5.2.1"
+    "@changesets/types": "^6.0.0"
   }
 }
