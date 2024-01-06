@@ -5,7 +5,13 @@
   "description": "Self-use commit message generator",
   "author": "Joie <leaps@live.com>",
   "license": "MIT",
-  "homepage": "https://github.com/usings/utilities/tree/main/packages/changesets-commit",
+  "homepage": "https://github.com/usings/utilities",
+  "bugs": "https://github.com/usings/utilities/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/usings/utilities.git",
+    "directory": "changesets-commit"
+  },
   "keywords": [
     "changesets-commit"
   ],

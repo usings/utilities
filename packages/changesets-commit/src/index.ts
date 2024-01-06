@@ -1,6 +1,12 @@
 /* eslint-disable require-await */
-import type { CommitFunctions, ReleasePlan } from '@changesets/types'
+import type { Changeset, CommitFunctions, ReleasePlan } from '@changesets/types'
 import outdent from 'outdent'
+
+const getAddMessage: CommitFunctions['getAddMessage'] = async (
+  changeset: Changeset,
+) => {
+  return outdent`docs(changeset): ${changeset.summary}`
+}
 
 const getVersionMessage: CommitFunctions['getVersionMessage'] = async (
   releasePlan: ReleasePlan,
@@ -24,7 +30,8 @@ const getVersionMessage: CommitFunctions['getVersionMessage'] = async (
   `
 }
 
-const defaultCommitFunctions: CommitFunctions = {
+const defaultCommitFunctions: Required<CommitFunctions> = {
+  getAddMessage,
   getVersionMessage,
 }
 
